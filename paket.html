@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paket Rekan Barokah</title>
+  <style>
+    #paket-barokah {
+  background-color: #f8f5ef;
+  padding: 80px 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.section-title h2 {
+  color: #d60000;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.paket-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.paket-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  width: 320px;
+  transition: transform 0.3s;
+}
+
+.paket-card:hover {
+  transform: translateY(-5px);
+}
+
+.paket-img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.paket-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.harga {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.merah {
+  background-color: #ff3333;
+  color: white;
+}
+
+.hijau {
+  background-color: #22c55e;
+  color: white;
+}
+
+.paket-card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.paket-card li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #444;
+}
+
+.paket-card li img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .paket-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+  </style>
+</head>
+<body>
+    <section id="paket-barokah">
+        <div class="section-title">
+          <h2>Paket Rekan Barokah</h2>
+          <p>Pilih paket sesuai kebutuhan usaha kamu</p>
+        </div>
+      
+        <div class="paket-container">
+          <!-- Paket Angkringan -->
+          <div class="paket-card">
+            <img src="assets/tenda.svg" alt="Tenda Angkringan" class="paket-img" />
+            <h3>Paket Angkringan</h3>
+            <p class="harga merah">Rp12.000.000</p>
+            <ul>
+              <li><img src="assets/ayam-ayam.svg" alt="" /> Bahan makanan awal</li>
+              <li><img src="assets/wajan.svg" alt="" /> Perlengkapan dan peralatan masak</li>
+              <li><img src="assets/Banner.svg" alt="" /> Spanduk desain siap pakai</li>
+              <li><img src="assets/menu.svg" alt="" /> Menu</li>
+              <li><img src="assets/kerupuk.svg" alt="" /> Kaleng kerupuk (blek)</li>
+            </ul>
+          </div>
+      
+          <!-- Paket Sultan -->
+          <div class="paket-card">
+            <img src="assets/warung.svg" alt="Toko Sultan" class="paket-img" />
+            <h3>Paket Sultan</h3>
+            <p class="harga hijau">Rp15.000.000</p>
+            <ul>
+              <li><img src="bahan-makanan.png" alt="" /> Bahan makanan awal</li>
+              <li><img src="peralatan.png" alt="" /> Peralatan premium & kompor besar</li>
+              <li><img src="spanduk.png" alt="" /> Branding eksklusif toko</li>
+              <li><img src="kaleng-kerupuk.png" alt="" /> Kaleng kerupuk full set</li>
+              <li><img src="assets/kerupuk.svg" alt="" /> Kaleng kerupuk (blek)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>

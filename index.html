@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pecel Lele Barokah</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/cooper-black" rel="stylesheet">
+    <link rel="icon" href="assets/Logo_pecelele.svg">
+</head>
+
+<body>
+
+    <!-- WA -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank" draggable="false">
+        <img src="assets/whatsapp.svg" alt="WhatsApp">
+    </a>
+
+    <!-- HEADER -->
+    <section class="atap-section">
+        <a href="#hero" class="logo-button">
+            <img src="assets/Logo_pecelele.svg" alt="Logo Ayam" draggable="false">
+        </a>
+    </section>
+
+    <nav class="navbar">
+        <input type="checkbox" id="hamburger-toggle">
+        <label for="hamburger-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="#home">BERANDA</a></li>
+            <li><a href="#about">TENTANG</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#paket-barokah">REKAN</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <img src="assets/Bebek.svg" alt="Bebek" class="hero-img hero-left" draggable="false">
+
+        <div class="hero-text">
+            <p class="normal-text">MAU BUKA USAHA</p>
+            <h1 class="rainbow-text">PECEL LELE</h1>
+            <h1 class="rainbow-text">SENDIRI?</h1>
+            <p class="normal-text">GABUNG BAROKAH<br>FRANCHISE SEKARANG</p>
+            <a href="#">DAFTAR SEKARANG</a>
+        </div>
+
+        <img src="assets/ayam.svg" alt="Ayam" class="hero-img hero-right" draggable="false">
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="about-container">
+          <div class="about-text">
+            <h1 class="rainbow-text">TENTANG KAMI</h1>
+            <p>Pecel Lele Barokah lahir dari semangat warung kaki lima yang sederhana, berawal dari satu tenda di
+                pinggir jalan pada tahun 2017.
+                Berawal dari resep asli Pecel Lele Lamongan, menu khas dari Jawa Timur yang terkenal sejak akhir
+                1970-an, kami mengangkat cita rasa autentik lele goreng dengan sambal tomat-terasi dan lalapan yang
+                mulai merambah Jakarta berkat pedagang perantau.</p>
+          </div>
+          <div class="about-image">
+            <img src="assets/Lele.svg" alt="Lele" draggable="false">
+          </div>
+        </div>
+      </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu">
+        <h1 class="rainbow-text">MENU BAROKAH</h1>
+
+        <div class="menu-tabs">
+            <button onclick="filterMenu('ayam')">AYAM</button>
+            <button onclick="filterMenu('bebek')">BEBEK</button>
+            <button onclick="filterMenu('lele')">LELE</button>
+        </div>
+
+        <div class="menu-items">
+            <!-- AYAM -->
+            <div class="menu-block ayam">
+                <div class="menu-card">
+                    <img src="assets/ayam goreng.png" alt="Ayam Goreng" draggable="false">
+                </div>
+                <p class="menu-label">AYAM GORENG</p>
+            </div>
+            <div class="menu-block ayam">
+                <div class="menu-card">
+                    <img src="assets/ayam bakar.svg" alt="Ayam Bakar" draggable="false">
+                </div>
+                <p class="menu-label">AYAM BAKAR</p>
+            </div>
+
+            <!-- BEBEK -->
+            <div class="menu-block bebek">
+                <div class="menu-card">
+                    <img src="assets/bebek bakar.svg" alt="Bebek Bakar" draggable="false">
+                </div>
+                <p class="menu-label">BEBEK BAKAR</p>
+            </div>
+            <div class="menu-block bebek">
+                <div class="menu-card">
+                    <img src="assets/bebek goreng.svg" alt="Bebek Goreng" draggable="false">
+                </div>
+                <p class="menu-label">BEBEK GORENG</p>
+            </div>
+
+            <!-- LELE -->
+            <div class="menu-block lele">
+                <div class="menu-card">
+                    <img src="assets/lele goreng.png" alt="Lele Goreng" draggable="false">
+                </div>
+                <p class="menu-label">LELE GORENG</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAKET REKAN BAROKAH -->
+    <section id="paket-barokah">
+        <div class="section-title">
+            <h1 class="rainbow-text">PAKET REKAN BAROKAH</h1>
+        </div>
+
+        <div class="paket-tabs">
+            <button onclick="filterPaket('angkringan')" class="active">ANGKRINGAN</button>
+            <button onclick="filterPaket('sultan')">SULTAN</button>
+        </div>
+
+        <div class="paket-items">
+            <!-- Paket Angkringan -->
+            <div class="paket-block angkringan">
+                <div class="paket-card">
+                    <img src="assets/angkringan.svg" alt="Tenda Angkringan" class="paket-img" draggable="false" />
+                </div>
+                <h3 class="paket-label">PAKET ANGKRINGAN</h3>
+                <p class="harga">Rp12.000.000</p>
+            </div>
+
+            <!-- Paket Sultan -->
+            <div class="paket-block sultan">
+                <div class="paket-card">
+                    <img src="assets/warung.svg" alt="Toko Sultan" class="paket-img" draggable="false" />
+                </div>
+                <h3 class="paket-label">PAKET SULTAN</h3>
+                <p class="harga">Rp25.000.000</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ISI PAKET -->
+    <section class="isi-paket">
+        <h2 class="isi-title">ISI PAKET</h2>
+
+        <div class="paket-grid">
+            <div class="paket-item">
+                <img src="assets/bahan-mentah.svg" alt="Bahan makanan awal">
+                <p>Bahan makanan <br> awal</p>
+            </div>
+            <div class="paket-item">
+                <img src="assets/alat.svg" alt="Perlengkapan masak">
+                <p>Perlengkapan dan <br> peralatan masak</p>
+            </div>
+            <div class="paket-item">
+                <img src="assets/spanduk.svg" alt="Spanduk">
+                <p class="spanduk">Spanduk desain <br> siap pakai</p>
+            </div>
+            <div class="paket-item">
+                <img src="assets/menu-barokah.svg" alt="Menu Makanan">
+                <p>Menu Makanan</p>
+            </div>
+            <div class="paket-item">
+                <img src="assets/kaleng-kerupuk.svg" alt="Kaleng kerupuk">
+                <p>Kaleng Kerupuk</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section id="franchise" class="franchise-section">
+        <div class="franchise-content">
+            <h1 class="rainbow-text">MULAI DARI WARUNG PINGGIR JALAN</h1>
+            <h2>KINI PECEL LELE BAROKAH MEMILIKI</h2>
+            <h2>70 CABANG SEJAK 2017</h2>
+            <div class="franchise-buttons">
+                <a href="#" class="btn red">JADI JURAGAN PECEL LELE SEKARANG</a>
+            </div>
+        </div>
+        <img src="assets/tempe.svg" class="lele-img left floating delay-0" alt="Pecel Lele" draggable="false">
+        <img src="assets/Lele.svg" class="lele-img right floating delay-1" alt="Pecel Lele" draggable="false">
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-top"></div>
+
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/Logo_pecelele.svg" alt="Logo Ayam Barokah" draggable="false">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>JELAJAHI</h4>
+                    <ul>
+                        <li><a href="#">Lokasi Cabang</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Paket Hemat</a></li>
+                        <li><a href="#">Promo</a></li>
+                        <li><a href="#">Diskon</a></li>
+                        <li><a href="#">Pesan Online</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>PELAJARI</h4>
+                    <ul>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Artikel</a></li>
+                        <li><a href="#">Tips Kuliner</a></li>
+                        <li><a href="#">Karier</a></li>
+                        <li><a href="#">Kemitraan</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>KONTAK</h4>
+                    <p>Ada pertanyaan, saran, atau mau kerja sama?</p>
+                    <p><strong>Email:</strong> pecelelebarokah@gmail.com</p>
+                    <p><strong>Nomor:</strong> 0812-3456-7890</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom"></div>
+    </footer>
+
+
+
+    <script>
+        function filterMenu(category) {
+            const allBlocks = document.querySelectorAll('.menu-block');
+            const buttons = document.querySelectorAll('.menu-tabs button');
+
+            allBlocks.forEach(block => {
+                if (block.classList.contains(category)) {
+                    block.style.display = 'block';
+                } else {
+                    block.style.display = 'none';
+                }
+            });
+
+            buttons.forEach(button => {
+                const btnCategory = button.textContent.trim().toLowerCase();
+                button.classList.toggle('active', btnCategory === category);
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            filterMenu('bebek');
+        });
+
+        function filterPaket(category) {
+            const allBlocks = document.querySelectorAll('.paket-block');
+            const buttons = document.querySelectorAll('.paket-tabs button');
+
+            allBlocks.forEach(block => {
+                if (block.classList.contains(category)) {
+                    block.style.display = 'flex';
+                } else {
+                    block.style.display = 'none';
+                }
+            });
+
+            buttons.forEach(button => {
+                const btnCategory = button.textContent.trim().toLowerCase();
+                button.classList.toggle('active', btnCategory === category);
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            filterPaket('angkringan');
+        });
+    </script>
+
+
+
+</body>
+
+</html>
